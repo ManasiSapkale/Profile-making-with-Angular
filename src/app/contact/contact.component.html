@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+  
+  <h1>Contact Page</h1>
+
+ <!--- <div *ngFor="let i of arr">
+    <div [ngStyle]="i%2==0 ? {'color':'green'} : {'color':'red'}">
+    <h1>{{i}}</h1>
+  </div>
+  </div>
+-->
+
+<div *ngFor="let i of arr">
+
+  <div [ngClass]="i%2==0 ? 'style1' : 'style2' ">
+    <h1>{{i}}</h1>
+
+  </div>
+</div>

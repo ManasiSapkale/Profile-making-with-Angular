@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+  
+  <h1>Gallery Page</h1>
+
+  <label>Enter a number to know the day</label>
+  <input type="text" [(ngModel)]="day">
+
+  <div [ngSwitch]="day">
+
+    <div *ngSwitchCase="0">it is sunday</div>
+    <div *ngSwitchCase="1">it is monday</div>
+    <div *ngSwitchCase="2">it is tuesday</div>
+    <div *ngSwitchCase="3">it is wednesday</div>
+    <div *ngSwitchCase="4">it is thursday</div>
+    <div *ngSwitchCase="5">it is friday</div>
+    <div *ngSwitchCase="6">it is saturday</div>
+    <div *ngSwitchDefault> Please enter valid number</div>
+
+  </div>
